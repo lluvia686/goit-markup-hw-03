@@ -6,14 +6,26 @@ body {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
+
+    padding-top: 24px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+
+p {
+    margin: 0;
+}
+
+ul {
+    margin: 0;
+    padding-left: 0;
+    list-style-type: none;
 }
 
 a {
     text-decoration: none;
-}
-
-ul {
-    list-style-type: none;
 }
 
 h2 {
@@ -31,6 +43,14 @@ h3 {
     line-height: 1.2;
 }
 
+.container {
+    max-width: 1158px;
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 header .logo {
     color: #2E2F42;
     font-family: "Raleway", sans-serif;
@@ -41,7 +61,31 @@ header .logo {
     letter-spacing: 0.03em;
 }
 
+.section {
+    padding-top: 120px;
+    padding-bottom: 120px; 
+}
 
+section .title-section {
+    background-color: #2E2F42;
+}
+
+footer .section {
+    background-color: #2E2F42;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
 
 .nav-link {
     font-size: 16px;
@@ -51,6 +95,20 @@ header .logo {
     color: #2E2F42;
 }
     
+header .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.nav-list {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    justify-content: flex-start;
+
+    margin-left: 76px;
+}
 
 .ad-link {
     color: #434455;
@@ -59,8 +117,19 @@ header .logo {
    letter-spacing: 0.02em;
 }
 
+.ad-list {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    justify-content: flex-end;
+
+    margin-left: 332px;
+}
+
 .addresses {
     font-style: normal;
+
+    
 }
 
 .nav-link:hover,
@@ -73,6 +142,8 @@ header .logo {
 
 .title-section {
     background-color: #2E2F42;
+    margin-top: 24px;
+    padding-bottom: 185px;
 }
 
 .page-title {
@@ -91,11 +162,26 @@ header .logo {
     font-weight: 500;
     line-height: 1.5;
     letter-spacing: 0.04em;
+    border-radius: 4px;
+    padding: 16px 32px;
+    border: 0;
+    box-shadow: 0 4px 4px rgb(0, 0, 0, 0.15);
+
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 48px;
 }
 
 .order-btn:hover,
 .order-btn:focus {
     background-color: #404BBF;
+}
+
+.features {
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
 }
 
 .team {
@@ -112,8 +198,22 @@ header .logo {
     text-align: center;
 }
 
+.team-list {
+    display: flex;
+    gap: 24px;
+    margin-top: 72px;
+}
+
 .portfolio-title {
     text-align: center;
+}
+
+.portfolio-list {
+    margin-top: 72px;
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 48px;
+    column-gap: 24px;
 }
 
 .foot {
@@ -129,6 +229,11 @@ footer .logo {
     font-size: 18px;
     line-height: 1.17;
     letter-spacing: 0.03em;
+}
+
+footer .container {
+    padding-top: 100px;
+    padding-bottom: 100px;
 }
 
 .logo-span {
