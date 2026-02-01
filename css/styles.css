@@ -89,7 +89,7 @@ header .logo {
     padding-bottom: 24px;
 }
 
-.section {
+.section:not(.title-section) {
     padding-top: 120px;
     padding-bottom: 120px; 
 }
@@ -286,6 +286,9 @@ footer .logo {
     line-height: 1.17;
     letter-spacing: 0.03em;
     margin-bottom: 16px;
+
+    padding-top: 0;
+    padding-bottom: 0;
 }
 
 .foot p {
